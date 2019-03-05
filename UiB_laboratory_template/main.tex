@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage[integrals]{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[scaled]{helvet}
+\usepackage{courier}
+\usepackage{natbib}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.0in}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[raggedright,bf,sf]{titlesec}
+\usepackage{fullpage}
+\usepackage{xcolor}
+\usepackage{listings}
+\renewcommand{\maketitle}{}
+\usepackage{float}
+\usepackage{ragged2e}
+
+\restylefloat{figure}
+
+\definecolor{lightgray}{gray}{0.95}
+\lstnewenvironment{code}[1][]%
+  {\minipage{\linewidth}
+\lstset{
+  language=,
+  keywordstyle=\bfseries,
+  captionpos=b,
+  backgroundcolor=\color{lightgray},
+  frame=shadowbox,
+  rulesepcolor=\color{gray},
+  basicstyle=\ttfamily\fontsize{10}{10}\selectfont,
+  aboveskip=20pt,
+  literate={æ}{{\ae}}1
+           {ø}{{\o}}1
+           {å}{{\aa}}1
+           {Æ}{{\AE}}1
+           {Ø}{{\O}}1
+           {Å}{{\AA}}1,
+  #1}}
+  {\endminipage}
+
+
+\begin{document}
+
+\maketitle
+\newcommand{\blankpage}{\newpage{}\thispagestyle{empty}\mbox{}\newpage{}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{titlepage}
+
+\hrule height 0.1cm
+\vskip 1cm 
+\textbf{\fontsize{40}{48} \selectfont PHYS227}
+\vskip 1cm 
+\hrule height 0.1cm
+\hfill\includegraphics[width=4cm]{uib-emblem-svart} 
+
+\textbf {\fontsize{40}{48} \selectfont Laboratory course in \\instrumantation and \\process control}\vskip 1cm 
+\centering 
+\textbf  {\fontsize{20}{24} \selectfont Laboratory report}\vskip 1cm
+\justify
+    
+\textbf
+{Lab.assignment:   Nr.
+\\Names:  
+\\ E-mails: \textcolor{blue}{@student.uib.no,@student.uib.no,}
+\\ Date:   {\today}
+\\ Approved:
+}\vskip 2cm 
+
+\hrule height 0.1cm
+\vskip 0.3cm 
+\textbf {\large Departmenst of Physics and Technolgy
+        \\Faculty of Mathematics and Natural Sciences}
+
+\end{titlepage}
+
+
+
+
+\setlength{\parskip}{0.2in}
+\pagenumbering{arabic}
+
+
+
+\section{Objective}
+(The objective of the laboratory assignment)
+ 
+
+ 
+
+\section{Materials}
+(Includes a list of instruments and components, and also an illustrative drawing/ photo if appropriate)
+
+All equipment used in this assignment are listed in Tab.~\ref{tab:equipmentlist}.
+\begin{table}[h]
+	\caption{Equipment list}
+	\label{tab:equipmentlist}
+	\begin{tabular}{|l|l|}
+		\hline
+		Name                       & Type        \\ 
+	\end{tabular}
+\end{table}
+\noindent
+\section{Procedure and results}
+(Description of methods used during the experiment, including the measurements conducted and the measurement results achieved)
+\section{Conclusion and discussion}
+(Includes a short summary/ conclusion of the laboratory assignment, and a discussion of the experimental results. A discussion of the sources of experimental uncertainty should also be included)
+
+
+
+% no more content 
+
+% put in right bibliography .bib-fil
+\clearpage
+\bibliographystyle{chicago}
+\bibliography{literature}
+
+\end{document}
+
+%Naming convention per 26.02.2019:
+%For Labview VIs and Matlab script
+%Lab{number}{task}_{subtask in numbers}_v{version in number (2 digits)}_{letters of person(s) that did it}.{vi/m}
+%Example:
+%Lab2c_3_v02_ATV.vi
+
+%For Pictures and saved data
+%{lab number}_{task}_{subtask in numbers}_{describing name}.png
+%Example:
+%2_c_3_Graph_100Ohms.png

@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage[integrals]{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[scaled]{helvet}
+\usepackage{courier}
+\usepackage{natbib}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.0in}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[raggedright,bf,sf]{titlesec}
+\usepackage{fullpage}
+\usepackage{xcolor}
+\usepackage{listings}
+\renewcommand{\maketitle}{}
+\usepackage{float}
+\usepackage{ragged2e}
+
+
+
+\restylefloat{figure}
+
+
+\definecolor{lightgray}{gray}{0.95}
+\lstnewenvironment{code}[1][]%
+  {\minipage{\linewidth}
+\lstset{
+  language=,
+  keywordstyle=\bfseries,
+  captionpos=b,
+  backgroundcolor=\color{lightgray},
+  frame=shadowbox,
+  rulesepcolor=\color{gray},
+  basicstyle=\ttfamily\fontsize{10}{10}\selectfont,
+  aboveskip=20pt,
+  literate={æ}{{\ae}}1
+           {ø}{{\o}}1
+           {å}{{\aa}}1
+           {Æ}{{\AE}}1
+           {Ø}{{\O}}1
+           {Å}{{\AA}}1,
+  #1}}
+  {\endminipage}
+
+
+\begin{document}
+
+\maketitle
+\newcommand{\blankpage}{\newpage{}\thispagestyle{empty}\mbox{}\newpage{}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{titlepage}
+
+\hrule height 0.1cm
+\vskip 1cm 
+\textbf{\fontsize{40}{48} \selectfont PHYS321}
+\vskip 1cm 
+\hrule height 0.1cm
+\hfill\includegraphics[width=4cm]{uib-emblem-svart} 
+
+\textbf {\fontsize{40}{48} \selectfont  Design av komplekse \\elektroniske system }\vskip 1cm 
+\centering 
+\textbf  {\fontsize{20}{24} \selectfont Rapport }\vskip 1cm
+\justify
+    
+\textbf
+{Laboppgave:  
+\\Navn:   
+\\ E-mails: \textcolor{blue}{@student.uib.no}
+\\ Dato:   {\today}
+}
+\vskip 4cm 
+
+\hrule height 0.1cm
+\vskip 0.3cm 
+\textbf {\large Institutt for fysikk og teknologi}
+
+\end{titlepage}
+
+
+
+
+\setlength{\parskip}{0.2in}
+\pagenumbering{arabic}
+
+% header slutt, følgende er innhold
+\section{Seksjon 1 }
+\subsection{Eksempel 1}
+Tabel
+ \begin{table}[h!]
+   \begin{tabular}{cccc}
+    S & R & Q        & QB    \\
+    1 & 0 & Previous & state \\
+    0 & 1 & 1        & 0     \\
+    0 & 0 & X        & X    
+  \end{tabular}
+ \end{table}
+ 
+
+ 
+\subsection{Eksempel 2}
+
+
+\section{Seksjon 2}
+
+
+% sett inn riktig .bib-fil
+\clearpage
+\bibliographystyle{chicago}
+\bibliography{litteratur}
+
+\end{document}
